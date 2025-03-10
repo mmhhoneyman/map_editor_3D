@@ -1,0 +1,74 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mmhho\\OneDrive\\Documents\\GitHub\\map_editor_3D\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AB07C185-FC96-467B-8DDC-AA2488BBD4B7}|map_editor_3D\\map_editor_3D.csproj|c:\\users\\mmhho\\onedrive\\documents\\github\\map_editor_3d\\map_editor_3d\\src\\windowmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB07C185-FC96-467B-8DDC-AA2488BBD4B7}|map_editor_3D\\map_editor_3D.csproj|solutionrelative:map_editor_3d\\src\\windowmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB07C185-FC96-467B-8DDC-AA2488BBD4B7}|map_editor_3D\\map_editor_3D.csproj|c:\\users\\mmhho\\onedrive\\documents\\github\\map_editor_3d\\map_editor_3d\\src\\projection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB07C185-FC96-467B-8DDC-AA2488BBD4B7}|map_editor_3D\\map_editor_3D.csproj|solutionrelative:map_editor_3d\\src\\projection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Projection.cs",
+              "DocumentMoniker": "C:\\Users\\mmhho\\OneDrive\\Documents\\GitHub\\map_editor_3D\\map_editor_3D\\src\\Projection.cs",
+              "RelativeDocumentMoniker": "map_editor_3D\\src\\Projection.cs",
+              "ToolTip": "C:\\Users\\mmhho\\OneDrive\\Documents\\GitHub\\map_editor_3D\\map_editor_3D\\src\\Projection.cs",
+              "RelativeToolTip": "map_editor_3D\\src\\Projection.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAqwH4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T04:43:09.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WindowManager.cs",
+              "DocumentMoniker": "C:\\Users\\mmhho\\OneDrive\\Documents\\GitHub\\map_editor_3D\\map_editor_3D\\src\\WindowManager.cs",
+              "RelativeDocumentMoniker": "map_editor_3D\\src\\WindowManager.cs",
+              "ToolTip": "C:\\Users\\mmhho\\OneDrive\\Documents\\GitHub\\map_editor_3D\\map_editor_3D\\src\\WindowManager.cs",
+              "RelativeToolTip": "map_editor_3D\\src\\WindowManager.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACcAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T03:35:45.031Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
