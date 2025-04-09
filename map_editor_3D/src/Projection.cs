@@ -24,6 +24,8 @@ namespace map_editor_3D.src
             { 0, 0, (-1f * zFar * zNear) / (zFar - zNear), 0 }
         };
 
+        private static Coordinates camera = new Coordinates(0, 0, 0);
+
         public struct Coordinates
         {
             public float x;
@@ -87,20 +89,57 @@ namespace map_editor_3D.src
             public Coordinates c1;
             public Coordinates c2;
             public Coordinates c3;
+            public bool visible;
 
+            // NOTE: It is important that the triangle points are created in a clockwise order in order to get the proper face for the projection plane
+            // Otherwise, the plane will face the opposide direction
             public Triangle(Coordinates c1, Coordinates c2, Coordinates c3)
             {
                 this.c1 = c1;
                 this.c2 = c2;
                 this.c3 = c3;
+                this.visible = SetVisibility(CrossProduct());
+            }
+
+            public Coordinates CrossProduct()
+            {
+                Coordinates line1 = new Coordinates(c2.px - c1.px, c2.py - c1.py, c2.z - c1.z);
+                Coordinates line2 = new Coordinates(c3.px - c2.px, c3.py - c2.py, c3.z - c2.z);
+                Coordinates normal = new Coordinates(
+                    line1.y * line2.z - line1.z * line2.y,
+                    line1.z * line2.x - line1.x * line2.z,
+                    line1.x * line2.y - line1.y * line2.x
+                );
+
+                float length = (float)(Math.Sqrt(normal.x * normal.x + normal.y * normal.y + normal.z*normal.z));
+                normal = new Coordinates(normal.x / length, normal.y / length, normal.z / length);
+
+                return normal;
+            }
+
+            public bool SetVisibility(Coordinates c)
+            {
+                if (c.x * (c1.px - camera.x) +
+                    c.y * (c1.py - camera.y) +
+                    c.z * (c1.z - camera.z) >= 0.0f)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
 
             public void Draw(Graphics g)
             {
-                g.DrawLine(Pens.Red, c1.px, c1.py, c2.px, c2.py);
-                g.DrawLine(Pens.Red, c1.px, c1.py, c3.px, c3.py);
-                g.DrawLine(Pens.Red, c3.px, c3.py, c2.px, c2.py);
-
+                if (this.visible)
+                {
+                    g.DrawLine(Pens.Red, c1.px, c1.py, c2.px, c2.py);
+                    g.DrawLine(Pens.Red, c1.px, c1.py, c3.px, c3.py);
+                    g.DrawLine(Pens.Red, c3.px, c3.py, c2.px, c2.py);
+                }
+                
                 //g.DrawLine(Pens.Red, 1, 1, 1, 1);
                 //g.DrawLine(Pens.Red, 1, 1, 1, 1);
                 //g.DrawLine(Pens.Red, 1, 1, 1, 1);
@@ -144,27 +183,27 @@ namespace map_editor_3D.src
 
                 // front face triangles
                 triArr[0] = new Triangle(pointALF, pointARF, pointULF);
-                triArr[1] = new Triangle(pointURF, pointARF, pointULF);
+                triArr[1] = new Triangle(pointARF, pointURF, pointULF);
 
                 // back face triangles
-                triArr[2] = new Triangle(pointALB, pointARB, pointULB);
+                triArr[2] = new Triangle(pointARB, pointALB, pointULB);
                 triArr[3] = new Triangle(pointURB, pointARB, pointULB);
 
                 // left face triangles
                 triArr[4] = new Triangle(pointALB, pointALF, pointULF);
-                triArr[5] = new Triangle(pointALB, pointULB, pointULF);
+                triArr[5] = new Triangle(pointULB, pointALB, pointULF);
 
                 // right face triangles
-                triArr[6] = new Triangle(pointARB, pointARF, pointURF);
+                triArr[6] = new Triangle(pointARF, pointARB, pointURF);
                 triArr[7] = new Triangle(pointARB, pointURB, pointURF);
 
                 // top face triangles
-                triArr[8] = new Triangle(pointARF, pointARB, pointALB);
+                triArr[8] = new Triangle(pointARB, pointARF, pointALB);
                 triArr[9] = new Triangle(pointARF, pointALF, pointALB);
 
                 // bottom face triangles
                 triArr[10] = new Triangle(pointURF, pointURB, pointULB);
-                triArr[11] = new Triangle(pointURF, pointULF, pointULB);
+                triArr[11] = new Triangle(pointULF, pointURF, pointULB);
             }
 
             public void Draw(Graphics g)

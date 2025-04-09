@@ -12,3 +12,4 @@ C:\Users\mmhho\OneDrive\Documents\GitHub\map_editor_3D\map_editor_3D\obj\Debug\n
 C:\Users\mmhho\OneDrive\Documents\GitHub\map_editor_3D\map_editor_3D\obj\Debug\net8.0-windows\map_editor_3D.pdb
 C:\Users\mmhho\OneDrive\Documents\GitHub\map_editor_3D\map_editor_3D\obj\Debug\net8.0-windows\map_editor_3D.genruntimeconfig.cache
 C:\Users\mmhho\OneDrive\Documents\GitHub\map_editor_3D\map_editor_3D\obj\Debug\net8.0-windows\ref\map_editor_3D.dll
+C:\Users\mmhho\OneDrive\Documents\GitHub\map_editor_3D\map_editor_3D\obj\Debug\net8.0-windows\map_editor_3D.sourcelink.json

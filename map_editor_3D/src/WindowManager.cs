@@ -28,11 +28,12 @@ namespace map_editor_3D.src
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
-            float sineX = (float)Math.Sin(2 * Math.PI / 1000 * Environment.TickCount) - 0.5f;
+            float sineX = (float)Math.Sin(2 * Math.PI / 2000 * Environment.TickCount) - 0.5f;
             //sineX = -0.5f;
-            float sineY = (float)Math.Sin((2 * Math.PI / 1000 * Environment.TickCount) + (Math.PI / 2)) - 0.5f;
-            Debug.WriteLine(sineX +" "+ sineY);
+            float sineY = (float)Math.Sin((2 * Math.PI / 2000 * Environment.TickCount) + (Math.PI / 2)) - 0.5f;
+            //Debug.WriteLine(sineX +" "+ sineY);
             draw(e.Graphics, sineX, sineY);
+            //draw(e.Graphics, 0.3f, 0.1f);
         }
 
         void draw(Graphics g, float x, float y)

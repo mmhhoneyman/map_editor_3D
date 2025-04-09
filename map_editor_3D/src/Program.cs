@@ -10,7 +10,7 @@ namespace map_editor_3D.src
         [STAThread]
         public static void Main()
         {
-            Debug.WriteLine("foo");
+            //Debug.WriteLine("foo");
             WindowManager wm = new WindowManager();
 
             Application.Run(wm);
