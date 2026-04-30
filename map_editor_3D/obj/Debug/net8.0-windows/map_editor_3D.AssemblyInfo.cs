@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("map_editor_3D")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d9c7734f6c9d2f253e932cd40f3396de98e26119")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6bef2f269d6923d8476f731bb98be729348e7bde")]
 [assembly: System.Reflection.AssemblyProductAttribute("map_editor_3D")]
 [assembly: System.Reflection.AssemblyTitleAttribute("map_editor_3D")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
