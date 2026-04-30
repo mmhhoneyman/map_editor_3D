@@ -9,37 +9,53 @@ namespace map_editor_3D.src
 {
     class WindowManager : Form
     {
+        private Stopwatch stopwatch;
+        private long lastTime;
+        private Projection projection;
         public WindowManager()
         {
             WindowState = FormWindowState.Maximized;
             FormBorderStyle = FormBorderStyle.None;
             BackColor = Color.Black;
             DoubleBuffered = true;
-            //Cursor.Hide(); 
-            //Cursor.Clip = this.Bounds;
+            Cursor.Hide();
+            Cursor.Clip = this.Bounds;
 
-            System.Windows.Forms.Timer renderTimer = new System.Windows.Forms.Timer();
-            renderTimer.Interval = 1; 
-            renderTimer.Tick += (sender, e) => Invalidate(); 
-            renderTimer.Start();
+            stopwatch = Stopwatch.StartNew();
+            lastTime = 0;
 
+            projection = new Projection();
+
+            KeyPreview = true;
         }
 
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
-            float sineX = (float)Math.Sin(2 * Math.PI / 2000 * Environment.TickCount) - 0.5f;
-            //sineX = -0.5f;
-            float sineY = (float)Math.Sin((2 * Math.PI / 2000 * Environment.TickCount) + (Math.PI / 2)) - 0.5f;
-            //Debug.WriteLine(sineX +" "+ sineY);
-            draw(e.Graphics, sineX, sineY);
-            //draw(e.Graphics, 0.3f, 0.1f);
-        }
+            long currentTime = stopwatch.ElapsedMilliseconds;
+            float delta = (currentTime - lastTime) / 1000f;
+            delta = Math.Min(delta, 0.05f);
+            lastTime = currentTime;
 
-        void draw(Graphics g, float x, float y)
+            projection.Update(delta, currentTime);
+            projection.Draw(e.Graphics);
+
+            Invalidate();
+
+            if (Form.ActiveForm == this) // DO NOT REMOVE THIS, user will not be able to use mouse after running
+            {
+                Cursor.Position = new System.Drawing.Point((int)Constants.SCREEN_WIDTH / 2, (int)Constants.SCREEN_HEIGHT / 2); // keeps mouse centered
+            }
+        }
+        protected override void OnKeyDown(KeyEventArgs e)
         {
-            Projection.Cube c1 = new Projection.Cube(new Projection.Coordinates(x, y, 2), 1f);
-            c1.Draw(g);
+            base.OnKeyDown(e);
+            Input.KeyDown(e.KeyCode);
+        }
+        protected override void OnKeyUp(KeyEventArgs e)
+        {
+            base.OnKeyUp(e);
+            Input.KeyUp(e.KeyCode);
         }
     }
 }

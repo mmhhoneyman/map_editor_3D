@@ -13,3 +13,18 @@ C:\Users\mmhho\OneDrive\Documents\GitHub\map_editor_3D\map_editor_3D\obj\Debug\n
 C:\Users\mmhho\OneDrive\Documents\GitHub\map_editor_3D\map_editor_3D\obj\Debug\net8.0-windows\map_editor_3D.genruntimeconfig.cache
 C:\Users\mmhho\OneDrive\Documents\GitHub\map_editor_3D\map_editor_3D\obj\Debug\net8.0-windows\ref\map_editor_3D.dll
 C:\Users\mmhho\OneDrive\Documents\GitHub\map_editor_3D\map_editor_3D\obj\Debug\net8.0-windows\map_editor_3D.sourcelink.json
+C:\Users\mmhho\Map Editor 3D\map_editor_3D\map_editor_3D\bin\Debug\net8.0-windows\map_editor_3D.exe
+C:\Users\mmhho\Map Editor 3D\map_editor_3D\map_editor_3D\bin\Debug\net8.0-windows\map_editor_3D.deps.json
+C:\Users\mmhho\Map Editor 3D\map_editor_3D\map_editor_3D\bin\Debug\net8.0-windows\map_editor_3D.runtimeconfig.json
+C:\Users\mmhho\Map Editor 3D\map_editor_3D\map_editor_3D\bin\Debug\net8.0-windows\map_editor_3D.dll
+C:\Users\mmhho\Map Editor 3D\map_editor_3D\map_editor_3D\bin\Debug\net8.0-windows\map_editor_3D.pdb
+C:\Users\mmhho\Map Editor 3D\map_editor_3D\map_editor_3D\obj\Debug\net8.0-windows\map_editor_3D.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mmhho\Map Editor 3D\map_editor_3D\map_editor_3D\obj\Debug\net8.0-windows\map_editor_3D.AssemblyInfoInputs.cache
+C:\Users\mmhho\Map Editor 3D\map_editor_3D\map_editor_3D\obj\Debug\net8.0-windows\map_editor_3D.AssemblyInfo.cs
+C:\Users\mmhho\Map Editor 3D\map_editor_3D\map_editor_3D\obj\Debug\net8.0-windows\map_editor_3D.csproj.CoreCompileInputs.cache
+C:\Users\mmhho\Map Editor 3D\map_editor_3D\map_editor_3D\obj\Debug\net8.0-windows\map_editor_3D.sourcelink.json
+C:\Users\mmhho\Map Editor 3D\map_editor_3D\map_editor_3D\obj\Debug\net8.0-windows\map_editor_3D.dll
+C:\Users\mmhho\Map Editor 3D\map_editor_3D\map_editor_3D\obj\Debug\net8.0-windows\refint\map_editor_3D.dll
+C:\Users\mmhho\Map Editor 3D\map_editor_3D\map_editor_3D\obj\Debug\net8.0-windows\map_editor_3D.pdb
+C:\Users\mmhho\Map Editor 3D\map_editor_3D\map_editor_3D\obj\Debug\net8.0-windows\map_editor_3D.genruntimeconfig.cache
+C:\Users\mmhho\Map Editor 3D\map_editor_3D\map_editor_3D\obj\Debug\net8.0-windows\ref\map_editor_3D.dll
